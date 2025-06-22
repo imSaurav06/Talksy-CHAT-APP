@@ -127,17 +127,13 @@ export const updateProfile = async (req, res) => {
 
 // after login ye check krega user database me hai ya nhi
 //using auth.middleware.js  protectRoute()
-export const checkAuth = async (req, res) => {
+export const checkAuth = (req, res) => {
   try {
     res.status(200).json(req.user);
   } catch (error) {
-    console.log("Error in checkAuth controller (backend)", error.message);
+    console.log("Error in checkAuth controller", error.message);
     res.status(500).json({ message: "Internal Server Error" });
   }
 };
 
-export const test = async (req, res) => {
-  res.send("✅ Server is running backend");
-  console.log("work kr rha hai ya nhi");
-  res.status(202).json(req.user);
-};
+
