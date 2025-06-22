@@ -31,10 +31,16 @@ app.use(
 
 // ✅ Use these BEFORE routes
 
+
+
+
+
 // ✅ 4. Mount routes
+console.log("Mounting /api/auth");
 app.use("/api/auth", authRoutes);
 
 // ✅ 5. Mount routes
+console.log("Mounting /api/messages");
 app.use("/api/messages", messageRoutes);
 
 if (process.env.NODE_ENV === "production") {
