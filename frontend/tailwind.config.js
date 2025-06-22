@@ -1,0 +1,48 @@
+// tailwind.config.js
+// import daisyui from "daisyui";
+module.exports = {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: true,
+
+    // themes: [
+    //   "light",
+    //   "dark",
+    //   "cupcake",
+    //   "bumblebee",
+    //   "emerald",
+    //   "corporate",
+    //   "synthwave",
+    //   "retro",
+    //   "cyberpunk",
+    //   "valentine",
+    //   "halloween",
+    //   "garden",
+    //   "forest",
+    //   "aqua",
+    //   "lofi",
+    //   "pastel",
+    //   "fantasy",
+    //   "wireframe",
+    //   "black",
+    //   "luxury",
+    //   "dracula",
+    //   "cmyk",
+    //   "autumn",
+    //   "business",
+    //   "acid",
+    //   "lemonade",
+    //   "night",
+    //   "coffee",
+    //   "winter",
+    //   "dim",
+    //   "nord",
+    //   "sunset",
+    // ],
+  },
+};
+// This is a Tailwind CSS configuration file that specifies the content files to scan for class names,
