@@ -16,7 +16,8 @@ import path from "path";
 dotenv.config();
 
 // ✅ 1. PORT fallback for safety
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5001; // ✅ fallback
+
 const __dirname = path.resolve();
 
 // ✅ 2. Use JSON middleware correctly
@@ -30,10 +31,6 @@ app.use(
 );
 
 // ✅ Use these BEFORE routes
-
-
-
-
 
 // ✅ 4. Mount routes
 console.log("Mounting /api/auth");
@@ -54,7 +51,10 @@ if (process.env.NODE_ENV === "production") {
 }
 
 // ✅ 6. Start server
-server.listen(5001, () => {
+server.listen(PORT, () => {
   console.log(`✅ Server is running on port ${PORT}`);
   connectDB();
 });
+
+
+console.log("ALL Done");
