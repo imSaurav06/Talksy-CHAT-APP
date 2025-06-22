@@ -16,7 +16,7 @@ import path from "path";
 dotenv.config();
 
 // ✅ 1. PORT fallback for safety
-const port = process.env.PORT || 5001; // ✅ fallback
+const port = process.env.PORT || 5000 // ✅ fallback
 
 const __dirname = path.resolve();
 
