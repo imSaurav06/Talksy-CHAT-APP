@@ -16,7 +16,7 @@ import path from "path";
 dotenv.config();
 
 // ✅ 1. PORT fallback for safety
-const PORT = process.env.PORT || 5001; // ✅ fallback
+const port = process.env.PORT || 5001; // ✅ fallback
 
 const __dirname = path.resolve();
 
@@ -51,10 +51,10 @@ if (process.env.NODE_ENV === "production") {
 }
 
 // ✅ 6. Start server
-server.listen(PORT, () => {
-  console.log(`✅ Server is running on port ${PORT}`);
+server.listen(port, () => {
+  console.log(`✅ Server is running on port ${port}`);
   connectDB();
 });
 
 
-console.log("ALL Done");
+
