@@ -23,12 +23,33 @@ const __dirname = path.resolve();
 // ✅ 2. Use JSON middleware correctly
 app.use(express.json());
 app.use(cookieParser());
+
+
+
+const allowedOrigins = [
+  "http://localhost:5001", // local dev
+  "https://talksy-chat-app.netlify.app", // production
+  "https://talksy-chat-app-one.vercel.app/" // optional more
+];
+
 app.use(
   cors({
-    origin: true, // Reflects the request origin
+    origin: function (origin, callback) {
+      // allow requests with no origin (like mobile apps or curl)
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
     credentials: true,
   })
 );
+
+
+
+
+
 
 // ✅ Use these BEFORE routes
 
