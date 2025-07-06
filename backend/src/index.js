@@ -29,7 +29,8 @@ app.use(cookieParser());
 const allowedOrigins = [
   "http://localhost:5001", // local dev
   "https://talksy-chat-app.netlify.app", // production
-  "https://talksy-chat-app-one.vercel.app/" // optional more
+  "https://talksy-chat-app-one.vercel.app/",
+  "https://ideal-bassoon-977r6p5946gpc7rxj-5173.app.github.dev/login" // optional more
 ];
 
 app.use(
