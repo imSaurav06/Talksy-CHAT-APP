@@ -25,30 +25,12 @@ app.use(express.json());
 app.use(cookieParser());
 
 
-
-const allowedOrigins = [
-  "http://localhost:5001", // local dev
-  "https://talksy-chat-app.netlify.app", // production
-  "https://talksy-chat-app-one.vercel.app/",
-  "https://ideal-bassoon-977r6p5946gpc7rxj-5173.app.github.dev/login" // optional more
-];
-
 app.use(
   cors({
-    origin: function (origin, callback) {
-      // allow requests with no origin (like mobile apps or curl)
-      if (!origin || allowedOrigins.includes(origin)) {
-        callback(null, true);
-      } else {
-        callback(new Error("Not allowed by CORS"));
-      }
-    },
+    origin: true, // Reflects the request origin
     credentials: true,
   })
 );
-
-
-
 
 
 
