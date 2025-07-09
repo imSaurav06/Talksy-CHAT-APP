@@ -36,9 +36,10 @@ Click the link below to view the complete **2-page project report** in PDF forma
 
 ---
 
-## 🚀 Live Demo
+## 🚀 Live Demo 
+wait for 30s in worst case
 
-🔗 [Live Preview](https://your-chat-app-live-link.com)
+🔗 [Live Preview](https://talksy-chat-app-jr6y.onrender.com)
 
 ---
 
