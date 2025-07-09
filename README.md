@@ -5,7 +5,7 @@ This is a full-stack real-time chat application built using the **MERN stack (Mo
 ## 📑 Project Report (PDF)
 Click the link below to view the complete **2-page project report** in PDF format:
 
-👉 [View Project Report (PDF)](https://github.com/yourusername/chat-app/blob/main/Chat_App_Project_Report.pdf)
+👉 [View Project Report (PDF)](https://github.com/imSaurav06/talksy-chat-app/commit/c9b336ae3df88794ee99f21f4372007d1fd88887)
 
 ---
 
